@@ -5,7 +5,7 @@ void main() {
 	int data1 = 5, data2 = 3;
 
 	int result1 = 0 || 1;
-	int result2 = 3 && -1; // 0ÀÌ¿Ü ¼ıÀÚ´Â ¹«Á¶°Ç Âü
+	int result2 = 3 && -1; // 0ì´ì™¸ ìˆ«ìëŠ” ë¬´ì¡°ê±´ ì°¸
 	int result3 = data1 == 3 || data2 == 3;
 	int result4 = data1 == 3 && data2 == 3;
 	int result5 = !data1;
