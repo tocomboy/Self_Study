@@ -2,7 +2,7 @@
 #define MAX_Count 5
 #define dsum(a) (a + a)
 
-void Print_Pi() { //ÆÄÀÌ°ª Ãâ·Â
+void Print_Pi() { //íŒŒì´ê°’ ì¶œë ¥
 	float pi;
 	pi = 3.14;
 	printf("%.2f\n", pi);
