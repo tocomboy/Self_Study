@@ -2,15 +2,15 @@
 
 int main() {
 	/*
-	unsigned char data = 255; // unsigned charì—ì„œì˜ ìµœëŒ“ê°’
-	data++; // ì˜¤ë²„í”Œë¡œìš°ë¡œ 0ì´ë¨
-	data++; // ë”°ë¼ì„œ 1
+	unsigned char data = 255; // unsigned char¿¡¼­ÀÇ ÃÖ´ñ°ª
+	data++; // ¿À¹öÇÃ·Î¿ì·Î 0ÀÌµÊ
+	data++; // µû¶ó¼­ 1
 	*/
 	// A - B = A + (~B) + 1
 	unsigned char data_1 = 0xFF, data_2 = 0x0F;
 	data_1 += ~data_2 + 1;
 	printf("%x\n\n", data_1);
-	// XOR ì—°ì‚°ìë¡œ ì•”í˜¸í™” ê°€ëŠ¥
+	// XOR ¿¬»êÀÚ·Î ¾ÏÈ£È­ °¡´É
 	unsigned char data_3 = 0x56, data_password = 0x37;
 	data_3 = data_3 ^ data_password;
 	printf("&x\n", data_3);

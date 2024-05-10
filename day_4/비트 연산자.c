@@ -1,25 +1,25 @@
 #include <stdio.h>
-unsigned char GetBit(unsigned char data, unsigned char bit_num) { // bit ì •ë³´ êº¼ë‚´ê¸°
+unsigned char GetBit(unsigned char data, unsigned char bit_num) { // bit Á¤º¸ ²¨³»±â
 	unsigned char bit_state = 0;
 	if (bit_num < 8) {
 		bit_state = data & (0x01 << bit_num);
-		bit_state = bit_state >> bit_num; // bitê°€ 0ì¸ì§€ 1ì¸ì§€ ì¶œë ¥í•˜ë ¤ë©´ ì²«ë²ˆì§¸ ìë¦¬ì—ì„œ 0ì¸ì§€ 1ì¸ì§€ í™•ì¸í•˜ë©´ ë¨
+		bit_state = bit_state >> bit_num; // bit°¡ 0ÀÎÁö 1ÀÎÁö Ãâ·ÂÇÏ·Á¸é Ã¹¹øÂ° ÀÚ¸®¿¡¼­ 0ÀÎÁö 1ÀÎÁö È®ÀÎÇÏ¸é µÊ
 	}
 	return bit_state;
 }
 
 int main() {
 	/*
-	& - AND / | - OR / ^ - XOR / ~ - NOT ë¹„íŠ¸ ì—°ì‚°ì
+	& - AND / | - OR / ^ - XOR / ~ - NOT ºñÆ® ¿¬»êÀÚ
 	*/
-	// íŠ¹ì • ë¹„íŠ¸ë¥¼ 0ìœ¼ë¡œ ì„¤ì •í•˜ê¸° (&) // 1ë¡œ ì„¤ì •í•˜ë ¤ë©´ OR ì‚¬ìš© ( | )
+	// Æ¯Á¤ ºñÆ®¸¦ 0À¸·Î ¼³Á¤ÇÏ±â (&) // 1·Î ¼³Á¤ÇÏ·Á¸é OR »ç¿ë ( | )
 	/*
 	unsigned char lamp_state;
-	lamp_state = lamp_state & 0xFB; // lamp stateëŠ” ëª¨ë¥´ì§€ë§Œ 2ë²ˆì§¸ ë¹„íŠ¸ë§Œ 0ìœ¼ë¡œ ë³€ê²½
+	lamp_state = lamp_state & 0xFB; // lamp state´Â ¸ğ¸£Áö¸¸ 2¹øÂ° ºñÆ®¸¸ 0À¸·Î º¯°æ
 	*/
 	/*
 	unsigned char lamp_state;
-	unsigned char bit_num = 2; // ë³€ê²½í•  ë¹„íŠ¸ ìœ„ì¹˜
+	unsigned char bit_num = 2; // º¯°æÇÒ ºñÆ® À§Ä¡
 	unsigned char mask = ~(0x01 << bit_num);
 	lamp_state = lamp_state & mask;
 	*/

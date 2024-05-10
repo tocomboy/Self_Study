@@ -6,21 +6,21 @@ void Test(){
 }
 
 int main(){
-    for(int i = 0; i < 5; i++) Test(); // dataê°€ ì§€ì—­ ë³€ìˆ˜ë¼ ì¶œë ¥: 00000
+    for(int i = 0; i < 5; i++) Test(); // data°¡ Áö¿ª º¯¼ö¶ó Ãâ·Â: 00000
     return 0;
 }
 */
 
 void Test(){
-    static int data = 0; // ì´ í•¨ìˆ˜ ë‚´ì—ì„œëŠ” ì „ì—­ ë³€ìˆ˜ë¡œ ì·¨ê¸‰. 
+    static int data = 0; // ÀÌ ÇÔ¼ö ³»¿¡¼­´Â Àü¿ª º¯¼ö·Î Ãë±Þ. 
     printf("%d ", data++);
 }
 
 int main(){
     int data = 1;
     for(int i = 0; i < 5; i++) {
-        Test(); // dataê°€ static ì „ì—­ ë³€ìˆ˜ë¼ ì¶œë ¥: 01234
-        printf("data = %d\n", data); // í•¨ìˆ˜ë¥¼ ë²—ì–´ë‚œ dataëŠ” ë‹¤ë¥¸ ë³€ìˆ˜.
+        Test(); // data°¡ static Àü¿ª º¯¼ö¶ó Ãâ·Â: 01234
+        printf("data = %d\n", data); // ÇÔ¼ö¸¦ ¹þ¾î³­ data´Â ´Ù¸¥ º¯¼ö.
         } 
 
     return 0;

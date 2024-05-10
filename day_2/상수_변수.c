@@ -2,31 +2,30 @@
 
 void main() {
 	/*
-	printf("%c\n", 65); # ì•„ìŠ¤í‚¤ ì½”ë“œ ì¶œë ¥
+	printf("%c\n", 65); # ¾Æ½ºÅ° ÄÚµå Ãâ·Â
 	float value = 2.1;
 	printf("%.1f\n", value);
 	int data1 = -32;
 	unsigned int data2 = 4294967295;
-	printf("%d, %o, %d, %u\n\n", data1, data1, data2, data2); # -1ì´ë‘ 4294967295ëŠ” %u(ë¶€í˜¸ ê³ ë ¤í•˜ì§€ ì•Šê³  ì¶œë ¥)ë¥¼ ì´ìš©í•˜ë©´ ê°™ì€ ê°’ìœ¼ë¡œ ì¶œë ¥ - 4294967295
+	printf("%d, %o, %d, %u\n\n", data1, data1, data2, data2); # -1ÀÌ¶û 4294967295´Â %u(ºÎÈ£ °í·ÁÇÏÁö ¾Ê°í Ãâ·Â)¸¦ ÀÌ¿ëÇÏ¸é °°Àº °ªÀ¸·Î Ãâ·Â - 4294967295
 
 	int data_1 = 10;
 	int data_2 = 010;
 	int data_3 = 0x10;
-	printf("%x, %d, %o", data_1, data_2, data_3); hexadecimal-16ì§„ìˆ˜ / decimal-ì •ìˆ˜ / octal-8ì§„ìˆ˜
+	printf("%x, %d, %o", data_1, data_2, data_3); hexadecimal-16Áø¼ö / decimal-Á¤¼ö / octal-8Áø¼ö
 	*/
 	/*
 	float data = 12.34;
-	printf("%f, %e, %E", data, data, data); // eì™€ EëŠ” ì •ìˆ˜ë¥¼ ì§€ìˆ˜í˜•íƒœë¡œ ì¶œë ¥
+	printf("%f, %e, %E", data, data, data); // e¿Í E´Â Á¤¼ö¸¦ Áö¼öÇüÅÂ·Î Ãâ·Â
 	*/
 	/*
 	int data1 = 7;
 	printf("[%5d] [%05d] [%-5d]\n", data1, data1, data1);
 
 	double data2 = 3.141592;
-	printf("[%f] [%.4f] [%8.4f] [%-8.4f]", data2, data2, data2, data2); //%ì™€ ìë£Œí˜• ì‚¬ì´ ì •ìˆ˜ëŠ” ì¶œë ¥ ìë¦¿ìˆ˜, ì†Œìˆ˜ëŠ” ì†Œìˆ˜ì  ìë¦¿ìˆ˜. ì •ìˆ˜ê°€ ìŒìˆ˜ì¼ ê²½ìš° ì¢Œì¸¡ì •ë ¬ ì–‘ìˆ˜ì¼ ê²½ìš° ìš°ì¸¡ì •ë ¬
+	printf("[%f] [%.4f] [%8.4f] [%-8.4f]", data2, data2, data2, data2); //%¿Í ÀÚ·áÇü »çÀÌ Á¤¼ö´Â Ãâ·Â ÀÚ¸´¼ö, ¼Ò¼ö´Â ¼Ò¼öÁ¡ ÀÚ¸´¼ö. Á¤¼ö°¡ À½¼öÀÏ °æ¿ì ÁÂÃøÁ¤·Ä ¾ç¼öÀÏ °æ¿ì ¿ìÃøÁ¤·Ä
 	*/
 	float data = 3.14;
 	printf("%07.3f", data);
 
 }
-

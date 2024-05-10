@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-int ShowMultiplication(int step) { //////// êµ¬êµ¬ë‹¨ ë°›ì•„ì„œ ì¶œë ¥ //////////////////
+int ShowMultiplication(int step) { //////// ±¸±¸´Ü ¹Þ¾Æ¼­ Ãâ·Â //////////////////
 	int i;
 	for (i = 1; i <= 9; i++) {
 		printf("%d * %d = %d\n", step, i, i * step);
@@ -11,7 +11,7 @@ int ShowMultiplication(int step) { //////// êµ¬êµ¬ë‹¨ ë°›ì•„ì„œ ì¶œë ¥ /////////
 
 int main() {
 	/*
-	int sum = 0, num; //for ë°˜ë³µë¬¸ ///////////////
+	int sum = 0, num; //for ¹Ýº¹¹® ///////////////
 	for (num = 1; num <= 5; num++) {
 		printf("num(%d) + sum(%d) = ", num, sum);
 		sum += num;
@@ -21,7 +21,7 @@ int main() {
 	*/
 
 	/*
-	int sum = 0, num = 1; ///for ë°˜ë³µë¬¸(ë¬´í•œ break) //////////////////
+	int sum = 0, num = 1; ///for ¹Ýº¹¹®(¹«ÇÑ break) //////////////////
 	for (; ; ){
 		printf("num(%d) + sum(%d) = ", num, sum);
 		sum += num;
@@ -35,7 +35,7 @@ int main() {
 	*/
 
 	/*
-	int sum = 0, num = 1; // while ë°˜ë³µë¬¸ ////////////////
+	int sum = 0, num = 1; // while ¹Ýº¹¹® ////////////////
 	while (num <= 5) {
 		printf("num(%d) + sum(%d) = ", num, sum);
 		sum += num;
@@ -46,7 +46,7 @@ int main() {
 	*/
 
 	/*
-	int sum = 0, num = 1; // do - while ë°˜ë³µë¬¸ ////////////////////
+	int sum = 0, num = 1; // do - while ¹Ýº¹¹® ////////////////////
 	do {
 		printf("num(%d) + sum(%d) = ", num, sum);
 		sum += num;
@@ -59,12 +59,12 @@ int main() {
 	/*
 	int num;
 	scanf_s("%d", &num);
-	ShowMultiplication(n); //í•¨ìˆ˜ë¥¼ í†µí•œ ë°˜ë³µë¬¸ //////////////////////////
+	ShowMultiplication(n); //ÇÔ¼ö¸¦ ÅëÇÑ ¹Ýº¹¹® //////////////////////////
 	*/
 
 	/*
 	int step, i;
-	for (step = 2; step <= 9; step++) { // ì¤‘ì²© ë°˜ë³µë¬¸ìœ¼ë¡œ êµ¬êµ¬ë‹¨ ì „ì²´ ì¶œë ¥ ////////////////////////////////////
+	for (step = 2; step <= 9; step++) { // ÁßÃ¸ ¹Ýº¹¹®À¸·Î ±¸±¸´Ü ÀüÃ¼ Ãâ·Â ////////////////////////////////////
 		for (i = 1; i <= 9; i++) {
 			printf("%d * %d = %d\n", step, i, step * i);
 		}

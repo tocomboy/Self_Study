@@ -3,7 +3,7 @@ static const a;
 
 double GetArea(const double pi, double radius, int limit){
     double result;
-    //pi = 3.14; // const double pië¡œ ì„ ì–¸ëœ ë³€ìˆ˜ëŠ” ì„ì˜ë¡œ ë³€ê²½ ë¶ˆê°€ëŠ¥.
+    //pi = 3.14; // const double pi·Î ¼±¾ğµÈ º¯¼ö´Â ÀÓÀÇ·Î º¯°æ ºÒ°¡´É.
     result = pi * radius * radius;
     return result;
 }
