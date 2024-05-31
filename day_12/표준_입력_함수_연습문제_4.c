@@ -78,7 +78,7 @@ void Bubble_Sort(char name[][Name_length], int score[][Part_Count]){ // 오른쪽부
         for(int j=0; j<Num_student-1-i; j++){ // 따라서 Num_student-1-i (-i)를 통해 오른쪽부터 한칸씩 정렬.
             if(score[j][TOTAL] < score[j+1][TOTAL]){
                 Swap_Name(name[j], name[j+1]);
-                Swap_Score(score[j], score[j+1]);
+                Swap_Score(score[j], score[j+1]); // score[j]에 속한 KOR, ENG, MATH, TOTAL 배열이 이동함. -- 따라서 이동후에는 1차원 배열로 사용 가능. **중요!중요!중요!중요!**
             }
         }
     }
