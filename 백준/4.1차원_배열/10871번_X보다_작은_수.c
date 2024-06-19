@@ -15,5 +15,7 @@ int main(){
         scanf("%d", (A+i));
         if(*(A+i) < X) printf("%d ", *(A+i));
     }
+
+    free(A);
     return 0;
 }

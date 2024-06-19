@@ -24,6 +24,7 @@ int main(){
         if(integer[i] == v) count++;
     }
     printf("%d", count);
-
+    
+    free(integer);
     return 0;
 }

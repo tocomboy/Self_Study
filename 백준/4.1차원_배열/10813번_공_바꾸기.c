@@ -34,6 +34,6 @@ int main(){
         printf("%d ", *(basket+temp));
     }
 
-
+    free(basket);
     return 0;
 }

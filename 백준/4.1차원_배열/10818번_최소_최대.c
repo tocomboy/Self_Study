@@ -23,5 +23,6 @@ int main(){
     }
     printf("%d %d", smallest, biggest);
 
+    free(integer);
     return 0;
 }
