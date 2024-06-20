@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/github/C_study/day_10",
-      "program": "c:/github/C_study/day_10/build/Debug/outDebug",
+      "cwd": "c:/Users/User/C_study/Do_it_c언어_입문/day_1",
+      "program": "c:/Users/User/C_study/Do_it_c언어_입문/day_1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
