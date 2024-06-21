@@ -46,7 +46,7 @@ int main(){
 
     // CASE 3
     // *p를 *p_save_next 대신 사용 가능.
-    NODE *p = p_head, *p_save_next;
+    NODE *p = p_head;
     while(NULL != p_head){
         p = p_head -> p_next;
         free(p_head);
