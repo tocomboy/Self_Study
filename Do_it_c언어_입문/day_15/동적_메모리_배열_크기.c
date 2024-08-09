@@ -4,7 +4,7 @@
 int main() {
 	int* p_num_list, count = 0, sum = 0, limit = 0, i;
 	printf("사용할 최대 개수를 입력하세요 : ");
-	scanf_s("%d", &limit);
+	scanf("%d", &limit);
 	p_num_list = (int*)malloc(sizeof(int) * limit);
 	while (count < limit) {
 		printf("숫자를 입력하세요 (9999를 누르면 종료) : ");
