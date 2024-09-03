@@ -7,4 +7,4 @@ class Point:
         return f"({self.x}, {self.y})" # f-string(f 문자열)
     
 p = Point(1, 2)
-s = str(p
+s = str(p)
