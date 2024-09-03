@@ -8,3 +8,4 @@ class Point:
     
 p = Point(1, 2)
 s = str(p)
+print(s)
