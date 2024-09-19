@@ -1,0 +1,101 @@
+<!--'!'만 치고 엔터하면 기본 양식 자동 작성-->
+<!DOCTYPE html> <!--작성안하면 HTML로 인식 안됨 -->
+<html lang="en"> <!--사이트 언어-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Headings</title> <!-- 탭 제목-->
+
+    <!-- 탭 제목에 이미지 삽입 -->
+    <!-- "/" - root  "./" - 현재경로 "../" - 상위경로 --> 
+    <link rel="icon" type="image/x-icon" href="../image/Hankuk_university.jpg"/>
+
+
+</head>
+
+<body>
+<h1>This is heading 1</h1> <!-- 내용 -->
+<h1>This is heading test</h1> 
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+
+<p>This is a paragraph.</p> <!-- 각각 한줄로 인식-->
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+<p> <!-- 전체를 한줄로 인식 -->
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<pre> <!-- pre를 넣어주면 문장 내에서 엔터를 인식함 -->
+<p>
+This paragraph
+contains a lot of spaces
+in the source code,
+<!-- but the browser --> <!-- 컨트롤+'/'로 드래그한 구간을 주석처리 가능-->
+ignores it.
+</p>
+</pre>
+
+<p>
+<!-- 주소 태그 걸기 -->
+<!--현재탭 열기-->
+<a href="https://computer.hufs.ac.kr/sites/computer/index.do" target="_self"> Visit Hankuk University website! </a> 
+<!--새탭 열기-->
+<a href="https://computer.hufs.ac.kr/sites/computer/index.do" target="_blank"> Visit Hankuk University website! </a> 
+</p>
+
+<h2> Absolute URLs </h2> <!-- 주소를 입력하는 방법 2가지 -->
+<p><!-- 베이스 사이트 -->
+<a href="https://computer.hufs.ac.kr/sites/computer/index.do" target="_blank"> Hankuk University website</a>
+</p>
+<p><a href ="https://www.google.com/" target="_blank">Google Website</a>
+</p>
+<h2> Relative URLs </h2> <!-- 사이트 내 사이트 -->
+<p><a href ="https://computer.hufs.ac.kr/computer/10047/subview.do" target="_blank">Class Information/Grading System</a></p>
+<p><a href ="https://computer.hufs.ac.kr/computer/10048/subview.do" target="_blank">Class Information/Undergraduate courses</a></p>
+
+<!-- 이미지에 링크 -->
+<a href="https://computer.hufs.ac.kr/sites/computer/index.do"><img src ="Hankuk_university.jpg" style="width:42px;height:42px;"></a>
+
+<!-- 이메일 보내기 집에서 연습 -->
+
+
+<!-- 버튼 링크 -->
+<button
+onclick="document.location='https://computer.hufs.ac.kr/sites/computer/index.do'" title="Click Me"> Hankuk University </button>
+
+<!-- 이미지 삽입 -->
+<img src="pic_trulli.jpg" alt ="Trulli" width="500" height="333">
+<img src="pic_trulli.jpg" alt="Trulli" style="width:128px;height:128px;">
+
+<!-- gif 삽입 -->
+<img src="programming.gif" alt="Computer man" style="width:100px;height:100px;">
+
+<!-- 폴더 안에 있는 이미지 삽입 -->
+<img src="./image/smiley.gif" alt="Simley Icone" style="width:128px;height:128px;">
+
+<!-- 배경 이미지 삽입 -->
+<p style="background-image: url('img_girl.jpg');">
+    You can specify background images<br>
+for any visible HTML element<br>
+In this example, the background image<br>
+is specified for a p element.<br>
+By default, the background image <br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves).
+</p>
+
+</body>
+</html>
