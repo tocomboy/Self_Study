@@ -1,6 +1,13 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
+    {
+      "type": "java",
+      "name": "Launch Java Program",
+      "request": "launch",
+      "mainClass": ""
+    },
     {
       "name": "Python 디버거: 현재 파일",
       "type": "debugpy",
