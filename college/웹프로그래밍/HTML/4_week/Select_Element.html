@@ -1,0 +1,16 @@
+<h2>The select Element</h2>
+<p>The select element defines a drop-down list:</p>
+<form action="/No_page.php">
+    <label for="cars">Choose a car:</label><br>
+    <!-- 처음 목록에 여러 항목을 띄우려면 size="숫자" multiple 사용 -->
+    <select id="cars" name="cars" size="3" multiple>
+        <!-- 다른 설정이 없으면 Volvo가 목록 최상단에 보여짐 -->
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <!-- selected를 통해 목록 최상단을 바꿀 수 있음 -->
+        <option value="Hyundai" selected>Hyundai</option>
+    </select>
+    <input type="submit">
+</form>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<body>
+    <h2>Text input fields</h2>
+    <!-- autocomplete - 자동완성 -->
+    <form action="/action_page.php" autocomplete = "on">
+        <label for="fname" >First name:</label><br>
+        <!-- value - 사전 입력 // readonly - 읽기전용 -->
+        <input type="text" id="fname" name="fname" value="성" readonly><br>
+        <label for="lname" >Last name:</label><br>
+        <!-- size - 입력칸 크기 // maxlength - 입력 글자수 제한-->
+        <input type="text" id="lname" name="lname" value="이름" size="60" maxlength="5">
+    </form>
+    
+    <p> Note that the default width of text input fields is 20 characters.</p>
+</body>
+</head>
