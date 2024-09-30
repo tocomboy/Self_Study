@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang = "ko">
+<html lang = "en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- 박스 설정 -->
     <style>
         .tag { 
-            background-color: rgb(211, 203, 201); 
+            background-color: rgba(247, 215, 177, 0.89); 
             color: rgb(4, 0, 0);
-            border: 2px solid black;
+            border: 1px solid rgb(255, 255, 255);
             margin: 20px;
-            adding: 20px;
         }
         table, th, td {
             border:1px solid black;
@@ -23,65 +22,113 @@
         th, td {
             text-align : center;
         }
+        nav {
+            text-align: center;
+        }
+        aside {
+            width: 25%;
+            padding-left: 15px;
+            margin-left: 15px;
+            margin-right: 30px;
+            float: right;
+            font-style: italic;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: rgba(247, 215, 177, 0.89);
+        }
     </style>    
 <!-- 홈페이지 이름 -->
-    <title>자기 소개</title>
+    <title>Introduction</title>
     <link rel="shortcut icon" href="dog_1.jpg" type="image/x-icon"> 
 </head>
 <body>
     <body>
     <div class="tag" >
-        <h1 style="text-align:center">자기 소개</h1>
+        <h1 style="text-align:center">JinGyu's WebSite</h1>
     </div>
 
 <!-- 의미있는 사진 -->
-<h2>안녕하세요. 제 이름은 배진규입니다.</h2>
-<p style="font-size:20px">가장 먼저 제가 제일 좋아하는 사진을 보여드리겠습니다.</p>
-<img src="dog_2.jpg" width = "400" height="400">
-<img src="dog_1.jpg" width = "400" height="400">
-<p style="font-size:20px">저희 집에서 키우고 있는 강아지입니다.</p>
-<p style="font-size:20px">왼쪽은 3개월 일 때 찍은 사진이고 오른쪽은 2살일 때 찍은 사진입니다.</p>
-<p>----------------------------------------------------------</p>
-<!-- 생년월일, 전공, 학년 -->
-<table style="width:50%;";>
+<div style="text-align: center;">
+    <img src="dog_2.jpg" width = "400" height="400" style="text-align: center;">
+    <aside>
+        <div style="margin-top: 30px">
+            <img src="cat_1.jpg" width = "300" height="300" style="text-align: center;">
+        </div>
+        <p style="font-size:20px"> extra photo - picture of cat</p>
+    </aside>
+    <img src="dog_1.jpg" width = "400" height="400" style="text-align: center;">
+</div>
+<p style="font-size:20px; margin-left: 500px;">Take a look at my dogs at home</p>
+<hr>
+<!-- 이름, 생년월일, 전공, 학년 -->
+<table style="width:100%;";>
     <tr>
-        <th>생년월일</th>
-        <th>전공</th>
-        <th>학년</th>
+        <th>name</th>
+        <th>Birth-date</th>
+        <th>major</th>
+        <th>grade</th>
     </tr>
     <tr>
+        <td>Bae JinGyu</td>
         <td>2001-03-08</td>
-        <td>컴퓨터전자시스템공학</td>
-        <td>2학년</td>
+        <td>Computer Engineering</td>
+        <td>2th Grade</td>
     </tr>
-    </table>
-<p>----------------------------------------------------------</p>
-<!-- 좋아하는 책 종류 및 좋아하는 책 한가지 -->
-<p style="font-size:17px"> 제가 제일 좋아하는 책의 장르는 소설입니다.</p>
-<p style="font-size:17px"> 소설이라면 로맨스, 액션, 추리, 공포 가리지 않고 다 좋아하는 편입니다.</p>
-<img src="book_1.jpg" width = "400" height="600">
-<p style = "color : rgb(255, 0, 0);"> 제가 가장 재미있게 읽은 책 중 하나입니다. </p>
-<p>----------------------------------------------------------</p>
-<!-- 좋아하는 영화 종류 및 좋아하는 영화 한가지 -->
-<p style="font-size:17px"> 제가 가장 좋아하는 영화 종류는 SF 입니다.</br> 
-    예전부터 우주와 과학에 관심이 많이 가지고 있었기 때문에 이에 영향을 받았던 것 같습니다. </br>
-    <img src="movie_1.jpg" width = "400" height="600"> </br>
-    그 중에서도 제가 가장 재미있게 봤던 영화는 인셉션 입니다.
-</p>
-<p>----------------------------------------------------------</p>
+</table>
+<hr>
+<h1 style="text-align:center">My Interest</h1>
+<article>
+    <!-- 좋아하는 책 종류 및 좋아하는 책 한가지 -->
+     <div style="background-color:rgba(247, 215, 177, 0.89)">
+        <h2 style="text-align:center">My favorite book &#128214;</h2>
+     </div>
+    <p style="font-size:17px; text-align: center;"> I like novels of all genres, whether it's romance, action, mystery, or horror.</p>
+    <div style="text-align: center;">
+        <img src="book_1.jpg" width = "300" height="450">
+    </div>
+    <div style=text-align:center>
+        <button onclick="document.location='https://search.shopping.naver.com/book/catalog/32490724936?cat_id=50005754&frm=PBOKMOD&query=%EA%B0%80%EC%9E%AC%EA%B0%80+%EB%85%B8%EB%9E%98%ED%95%98%EB%8A%94+%EA%B3%B3+%EC%B1%85&NaPm=ct%3Dm1oy5eqo%7Cci%3D3393fe4579405c8780b3b6ca1deee9c3963a694b%7Ctr%3Dboknx%7Csn%3D95694%7Chk%3D5443ce08ac1dab21f6dba8f2201ab899eff4a952'"title="Click Me">More information</button>
+    </div>
+</article>
+<article>
+    <!-- 좋아하는 영화 종류 및 좋아하는 영화 한가지 -->
+    <div style="background-color:rgba(247, 215, 177, 0.89)">
+        <h2 style="text-align:center">My favorite Movie &#127916; : SF</h2>
+    </div>
+    <div style="text-align: center;">
+        <img src="movie_1.jpg" width = "400" height="600">
+    </div>
+
+    <nav>
+        <a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=1790335&qvt=0&query=%EC%9D%B8%EC%85%89%EC%85%98" target="_blank">More information</a>
+    </nav>
+</article>
+
+<hr>
 <!-- 본인에 관한 신기한/재미 있는 점 한가지 -->
-<p style="font-size:17px">
-    저에 대한 가장 재미있는 점은 내향적인 성격과는 다르게 외향적인 취미를 많이 가지고 있다는 점입니다. </br>
-    <img src="board_1.jpg" width = "400" height="400">
-    <img src="motorcycle_1.jpg" width = "400" height="400">
-    <img src="trip_1.jpg" width = "400" height="400"> </br>
-    평소에는 밖으로 돌아다니지 않고 집에서 혼자 게임하는 것을 좋아하지만 </br>
-    밖으로 나가기 좋은 날에는 바이크 라이딩을, 겨울에는 겨울 내내 보드를 타러 다닙니다. 
-</p>
-<p>----------------------------------------------------------</p>
+
+<table border="1" style="margin: auto; width: 50%; border: none; border-collapse: collapse;">
+    <tr style="border:none;">
+        <th style="border-bottom:none; border-top:none;">Borad &#9924</th>
+        <th style="border-bottom:none; border-top:none;">Motorcycle &#9925</th>
+        <th style="border-bottom:none; border-top:none;">Trip &#9748; &#9925;</th>
+    </tr>
+    <tr style="border:none;">
+        <td style="border-bottom:none; border-top:none;"><img src="board_1.jpg" width = "400" height="400"></td>
+        <td style="border-bottom:none; border-top:none;"><img src="motorcycle_1.jpg" width = "400" height="400"></td>
+        <td style="border-bottom:none; border-top:none;"><img src="trip_1.jpg" width = "400" height="400"></td>
+    </tr>
+    <tr style="border:none;"></tr>
+        <td style="border-bottom:none; border-top:none;"> <button type="button" onclick="alert('snowboarding at night in Jeongseon')" > SnowBoard </button> </td>
+        <td style="border-bottom:none; border-top:none;"> <button type="button" onclick="alert('On the way to Gangwon-do')" > MotorCycle </button> </td>
+        <td style="border-bottom:none; border-top:none;"> <button type="button" onclick="alert('Hyeopjae beach in Jeju Island')" > Trip </button> </td>
+    </tr>
+</table>
+
+<hr>
 <!-- 자유 내용 -->
-<p style="font-size:20px; color:rgb(13, 0, 255);">한 학기 동안 노력해서 많은 내용을 배워가고 싶습니다. <br>
-    잘 부탁 드립니다
-</p>
+ <footer>
+    <p style="font-size:20px; color:rgb(21, 29, 255); text-align:center">Thank you &part; &nabla; &part;</p>
+ </footer>
+
 </body>
 </html>
