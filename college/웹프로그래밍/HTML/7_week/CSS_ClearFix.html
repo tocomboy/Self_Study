@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS_ClearFix.css">
+</head>
+
+<h2>Without Clearfix</h2>
+ <p>This image is floated to the right. It is also taller than the 
+element containing it, so it overflows outside of its container:</p>
+ <div>
+ <img class="img1" src="../image/Hankuk_university.jpg" 
+alt="Hankuk_university" width="170" height="170">
+ Lorem ipsum dolor sit amet, consecteturadipiscingelit. Phasellus
+ imperdiet...
+ </div>
+ <h2 style="clear:right">With Clearfix</h2>
+ <p>We can fix this by adding a clearfixclass with overflow: auto; 
+to the containing element:</p>
+ <div class="clearfix">
+ <img class="img2" src="../image/Hankuk_university.jpg" 
+alt="Hankuk_university" width="170" height="170">
+ Lorem ipsum dolor sit amet, consecteturadipiscingelit. Phasellus
+ imperdiet...
+ </div>

@@ -1,0 +1,9 @@
+body {
+    background-image: url("./images/img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    /* scroll or fixed */
+    /*scroll - 위치에 고정 / fixed - 화면에 계속 떠있음*/ 
+    background-attachment: fixed;
+    }
+    
