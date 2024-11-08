@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>Example 1: What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"' >Click Me!</button>
+    <hr>
+
+    <h2 id="demo2_1">Example 2: What Can JavaScript Do?</h2>
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo2_1').style.fontSize='35px'; document.getElementById('demo2').style.fontSize='35px'">1 change</button>
+    <button type="button" onclick="document.getElementById('demo2_1').style.fontSize='20px'; document.getElementById('demo2').style.fontSize='50px'">2 change</button>
+    <hr>
+
+    <h2>Example 2: What Can JavaScript Do?</h2>
+    <p id="demo3">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.backgroundColor='yellow'">Click Me!</button>
+    <hr>
+
+    <h2>Example 2: What Can JavaScript Do?</h2>
+    <p id="demo4">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo4').style.color='blue'">Click Me!</button>
+    <hr>
+
+    <h2>Example 3: What Can JavaScript Do?</h2>
+    <p id="demo5">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo5').style.display='none'">Click Me!</button>
+    <hr>
+
+    <h2>Example 4: What Can JavaScript Do?</h2>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo6" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo6').style.display='block'">Click Me!</button>
+    <hr>
+
+    <h2>Example 5: Date and Time JavaScript</h2>
+    <!-- <p id="demo7"></p> -->
+    <button type="button" onclick="document.getElementById('demo7').innerHTML = Date()"> Click me to display Date and Time.</button>
+    <p id="demo7"></p>
+    <hr>
+
+    <h2>Example 6: JavaScript can change HTML attribute values.</h2>
+    <button onclick="document.getElementById('myImage').src='../images/pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="../images/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='../images/pic_bulboff.gif'">Turn off the light</button>
+    <hr>
+
+    <h2>Example 7: The window.print() Method</h2>
+    <p>Click the button to print the current page.</p>
+    <button onclick= "window.print()" >Print this page</button>
+    
+</body>
+</html>

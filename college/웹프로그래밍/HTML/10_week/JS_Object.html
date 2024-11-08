@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    // Create an Object:
+        const car = {type: "Fiat", model: "500", weight: "850kg", color: "white"};
+    // Display Data from the Object:
+        document.getElementById("demo").innerHTML= "The car type is " + car;
+    </script>
+
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+ <script>
+ // Create an Object:
+ const person = {
+ firstName: "John",
+ lastName : "Doe",
+ id : 5566,
+ fullName: function() {
+    return this.firstName+ " " + this.lastName;
+    }
+};
+ 
+ // Display lastName from the Object:
+ document.getElementById("demo1").innerHTML = "The last name is " + person.lastName + "; "+ "The last name is " + person["lastName"];
+
+ document.getElementById("demo2").innerHTML=  "Function of full name: " + person.fullName();
+ </script>
+
+ <p id="demo3"></p>
+
+ <p id="demo4"></p>
+
+ <p id="demo5"></p>
+ <script>
+ // Create an Object
+ const person2 = {
+ firstName: "John",
+ lastName: "Doe",
+ age:50,
+ eyeColor: "blue",
+ myFavs:{
+    Fav1: "reading",
+    Fav2: "Sporting",
+    Fav3: "Traveling"
+    }
+ };
+ // Create a Copy
+ const x = person2;
+ // Change Age
+ x.age = 10;
+ document.getElementById("demo3").innerHTML=  person2.firstName + " is " + person2.age+ " years old.";
+
+ person2.nationality= "English";
+ document.getElementById("demo4").innerHTML = person2.firstName + " is " + person2.nationality+ ".";
+
+ document.getElementById("demo5").innerHTML=  person2.firstName + " is " + person2.age+ " years old." + "My best Favorite is: " + person2.myFavs.Fav3;
+ </script>
+
+</body>
+</html>

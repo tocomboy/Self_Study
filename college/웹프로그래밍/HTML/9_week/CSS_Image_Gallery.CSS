@@ -1,0 +1,25 @@
+/* setting of the whole gallery*/
+div.gallery {
+    margin: 1px;
+    border: 10px solid #000000;
+    float: right;
+    width: 24%;
+}
+    /* setting when moving mouse over 
+   each image in the gallery*/
+div.gallery:hover {
+    border: 5px dotted rgb(13, 0, 255);
+}
+/* setting of each image */
+div.gallery img {
+    width: 70%;
+    height: auto;
+}
+    /* setting of description of each image */
+div.desc {
+    padding: 25px;
+    text-align: center;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+}

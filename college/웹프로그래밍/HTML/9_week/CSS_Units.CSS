@@ -1,0 +1,10 @@
+.parent-element {
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    }
+    p {
+    font-size: 4em;
+    color: #0077cc;
+    }
