@@ -1,0 +1,260 @@
+head, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure; /* CSS - color name text colors */
+}
+body {
+    margin-top: 50px;
+}
+p {
+    font-size: 15pt; /* CSS - Font size */
+    text-transform: uppercase; /* CSS - Text */
+    text-indent: 5px; /* CSS - Text */
+}
+h1 {
+    color: #872642; /* CSS - HEX text colors */
+    text-transform: uppercase; /* CSS - Text */
+    font: italic bold 1.5em/1em Georgia, serif ; /* CSS - Text */
+    font-weight: bold; /* CSS - Font weight */
+}
+h2 {
+    background-color: rgb(183, 235, 255);
+    text-align: center; /* CSS - Text */
+    text-transform: uppercase; /* CSS - Text */
+    font: italic bold 1.5em/1em Georgia, serif ; /* CSS - Text */
+    font-weight: bold; /* CSS - Font weight */
+}
+header {
+    background-color: #9DC3E6; /* CSS - background-colors */
+    height: 220px;
+}
+nav {
+    background-color: rgb(158, 195, 230); /* CSS - RGB background-colors */
+    text-align: center; /* CSS - Text */
+    font-size: 15pt; /* CSS - Font size */
+    position: fixed; /* CSS - Position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+aside {
+    text-align: center; /* CSS - Text */
+}
+table, th, td {
+    margin-left: auto; /* CSS - margin */
+    margin-right: auto; /* CSS - margin */
+    border:1px solid; /* CSS - border */
+    border-color: black;
+    border-collapse: collapse;
+    width:70%; /* CSS - height, width */
+    height: 100%; /* CSS - height, width */
+}
+th, td {
+    /* background-color:rgb(183, 235, 255); CSS - RGB background-colors */
+    font-size: 14pt; /* CSS - Font size */
+}
+tr:nth-child(odd) { /* CSS - nth-child */
+    background-color: rgb(183, 235, 255);
+}
+tr:nth-child(even) { /* CSS - nth-child */
+    background-color: rgb(126, 219, 255);
+}
+footer {
+    text-align: center;
+    background-color: 209°, 59%, 76%; /* CSS - HSL background-colors */
+}
+nav a { 
+    color: blue; /* CSS - text colors */
+    text-decoration: none;
+    padding: 0 10px; /* CSS - Padding */
+}
+nav a:hover {
+    color: darkblue;
+}
+a { 
+    color: blue; /* CSS - text colors */
+    text-decoration: none;
+    padding: 0 10px; /* CSS - Padding */
+    font-size: 15pt; /* CSS - Font size */
+}
+a:link {
+    color: blue; /* 기본 색상 */
+    text-decoration: none;
+}
+a:hover {
+    color: darkblue;
+}
+a:visited {
+    color: purple; /* 방문 후 색상 */
+    text-decoration: underline;
+}
+a:active {
+    color: red; /* 클릭 시 색상 */
+    text-decoration: underline dotted;
+}
+li {
+    text-align: start;
+    text-decoration: none; /* CSS - Text */
+    text-transform: lowercase;  /* CSS - Text */
+    text-indent: 20px; /* CSS - Text */
+    letter-spacing: 3px; /* CSS - Text */
+    line-height: 1.5; /* CSS - Text */
+    font-size: 18pt; /* CSS - Font size */
+}
+
+/* -------------------------- ID selector ------------------------------- */
+#History { /* CSS - History Section background image */
+    background-image: url("./images/wooden-floor-background.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#Local_Food {
+    width: 65%; /* CSS - height, width */
+    height: auto; /* CSS - height, width */
+    float: left;
+}
+
+/* -------------------------- Class ------------------------------- */
+.p_style {
+    font-size: 15pt; /* CSS - Font size */
+    text-align: center;
+}
+.p_under_comment {
+    font-size:17px;  /* CSS - Font size */
+    clear: both; 
+    text-transform: uppercase;
+}
+.h1_style {
+    text-align:center; 
+    background-color:#9DC3E6; 
+    padding-top: 10px; /* CSS - Padding */
+    height:50px;
+}
+.h3_style {
+    text-align:center; 
+}
+.th_1{
+    width: 600px; /* CSS - height, width */
+    height: 100px; /* CSS - height, width */
+}
+.th_2{
+    width: 600px; /* CSS - height, width */
+}
+.th_3{
+    width: 500px; /* CSS - height, width */
+}
+.img_style_history {
+    border:3px solid; /* CSS - border */
+    border-color: black;  /* CSS - border color */
+}
+.img_style_history_float {
+    border:3px solid; /* CSS - border */
+    border-color: black;  /* CSS - border color */
+    float: left; /* CSS - float */
+    margin-left: 200px; /* CSS - margin */
+}
+.img_style_attraction {
+    border:2px double; /* CSS - border */
+    border-color: #F7E9E4;  /* CSS - border color */
+}
+.img_style_food {
+    border:3px double; /* CSS - border */
+    border-color: black;  /* CSS - border color */
+}
+.contact_table_style {
+    text-align: center; /* CSS - text */
+    width: 60%; /* CSS - height, width */
+    border:3px inset; /* CSS - border */
+    border-color: #9DC3E6; /* CSS - border color */
+}
+.iframe_center {
+    width:560px; /* CSS - height, width */
+    margin-left: auto; /* CSS - margin */
+    margin-right: auto; /* CSS - margin */
+}
+.div_center {
+    text-align: center;
+    border: #9DC3E6 double; /* CSS - border */
+}
+.header_center {
+    text-align: center; /* CSS - text colors */
+    color: #872642;
+    text-decoration: dashed underline; /* CSS - Text */
+    text-transform: uppercase;  /* CSS - Text */
+    text-indent: 20px; /* CSS - Text */
+    letter-spacing: 3px; /* CSS - Text */
+    line-height: 1.5; /* CSS - Text */
+}
+.media_section {
+    background-color: rgb(183, 235, 255);
+}
+.aside_style {
+    margin-top: 120px;  /* CSS - margin */
+    margin-bottom: 280px; /* CSS - margin */
+    padding: 10px;
+    height: 300px;
+    width: auto;
+    overflow: scroll; /* CSS - Overflow */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.fact-item {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #e6f7ff; /* 항목 배경색 */
+    border-radius: 5px;
+    width: calc(100% - 10px);
+    display: block;
+    box-sizing: border-box;
+}
+.iframe_style {
+    padding-top: 10px; /* CSS - padding */
+    padding-left: 4px; /* CSS - padding */
+    padding-right: 7px; /* CSS - padding */
+    padding-bottom: 5px; /* CSS - padding */
+}
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: lightblue;
+    padding: 10px;
+}
+.clearfix::after { /* CSS - clearfix */
+    content: "";
+    display: table;
+    clear: both;
+}
+.dropdown { /* CSS - dropdown */
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
