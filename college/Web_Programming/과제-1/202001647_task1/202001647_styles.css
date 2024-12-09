@@ -4,11 +4,13 @@ head, body {
 }
 body {
     margin-top: 50px;
+    line-height: 30px;
 }
 p {
     font-size: 15pt; /* CSS - Font size */
     text-transform: uppercase; /* CSS - Text */
     text-indent: 5px; /* CSS - Text */
+    font-weight: bold;
 }
 h1 {
     color: #872642; /* CSS - HEX text colors */
@@ -154,6 +156,7 @@ section#Local_Food {
     border-color: black;  /* CSS - border color */
     float: left; /* CSS - float */
     margin-left: 200px; /* CSS - margin */
+    width: 30%;
 }
 .img_style_attraction {
     border:2px double; /* CSS - border */

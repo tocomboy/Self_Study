@@ -8,12 +8,22 @@
 </head>
 <!-- body start -->
 <body>
+    <!-- import JavaScript -->
+    <script src="202001647_script.js"></script>  
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { // 
+            welcomeMessage(); // welcome alert message
+            validateContactForms(); // contact form validation
+        });
+    </script>
+    
 <!-- Semantic elements - header -->
     <header>
         <!-- CSS - header text colors -->
         <h1 class="header_center relative-box">Gyeongsan City</h1>
         <h2 class="header_center" style="background-color:#9DC3E6">Gyeongsan - the Hometown of Three Saints</h2> 
-        <p class="p_style">A city of education and industry located in Gyeongsangbuk-do, 
+        <p class="p_style">A city of education and industry located in Gyeongsangbuk-do, <br>
             A historically rich city known as the Hometown of the Three Saints, An emerging city of education.
             </p>
         <hr>
@@ -30,7 +40,6 @@
                     <a href="#University">Education</a>
                 </div>
             </div>
-            <a href="#History">History</a> |
             <a href="#Attractions">Attractions</a> |
             <div class="dropdown">
                 <a href="#Local_Food">Local Food</a> |
@@ -59,10 +68,14 @@
             <!-- div to align center -->
             <div class="div_center">
             <h2>1. Center of Buddhism during the Three Kingdoms Period</h2>
-            <p>Gyeongsan was an important center of Buddhism during the Silla era. It is the hometown of the Three Saints (Samseonghyeon): Wonhyo, Seol Chong, and Iryeon. <br> 
-                Wonhyo was a Buddhist monk who greatly contributed to the development of Korean Buddhism, making Buddhist teachings more accessible to the general public. <br>
-                His son, Seol Chong, was a scholar who advanced Confucian education and philosophy in Silla. Iryeon, a monk from the Goryeo period, wrote the Samguk Yusa, 
-                a collection of historical tales, which preserved Korea's early history and Buddhism. Gyeongsan’s deep connection to Buddhism continues to be a defining feature of its historical heritage.</p>
+            <p>Gyeongsan was an important center of Buddhism during the Silla era. <br> 
+                It is the hometown of the Three Saints (Samseonghyeon): Wonhyo, Seol Chong, and Iryeon. <br> 
+                Wonhyo was a Buddhist monk who greatly contributed to the development of Korean Buddhism, <br> 
+                making Buddhist teachings more accessible to the general public. <br>
+                His son, Seol Chong, was a scholar who advanced Confucian education and philosophy in Silla. <br> 
+                Iryeon, a monk from the Goryeo period, wrote the Samguk Yusa, 
+                a collection of historical tales, which preserved Korea's early history and Buddhism. <br>
+                Gyeongsan’s deep connection to Buddhism continues to be a defining feature of its historical heritage.</p>
             
             <img class="img_style_history" src="https://www.yeongnam.com/mnt/file/201208/20120810.010350835090001i1.jpg" alt="The Three Saints of Gyeongsan"><br>
             <p class="p_under_comment"From left to right: Wonhyo, Seol Chong, Iryeon</p>
@@ -89,10 +102,12 @@
             <div class="div_center clearfix">
             <p>In modern times, Gyeongsan has evolved into a city that blends education and industry. <br>
                 With prominent universities such as Yeungnam University and Daegu University located here, Gyeongsan has become a thriving educational hub. <br>
-                Additionally, its proximity to Daegu has made Gyeongsan a vital part of the regional economy, with industries like automotive and electronic parts manufacturing flourishing. <br>
-                This combination of education and industry has attracted a young population and fostered a vibrant economy, making Gyeongsan an emerging city of growth and opportunity.</p>
+                Additionally, its proximity to Daegu has made Gyeongsan a vital part of the regional economy, <br> 
+                with industries like automotive and electronic parts manufacturing flourishing. <br>
+                This combination of education and industry has attracted a young population and fostered a vibrant economy, <br> 
+                making Gyeongsan an emerging city of growth and opportunity.</p>
             <img class="img_style_history_float" src="https://img.hankyung.com/photo/202407/01.37322393.1.jpg" alt="Yeungnam University" width="500px">
-            <img class="img_style_history_float" src="https://i.namu.wiki/i/g2uCwaFLcmqcadXAyA9g5Zc7fCXabaDPRLpysfrD0LgQYr7Oo-bgAQsg4iStq6460Dd4arXs73l1shhv0cHpjCBphYkRVPMAo0OXSH3WRApwGcZXIxfoU0dZd5GzfoY8XVWqAGSotCU3a8qtpHf5cQ.webp" alt="Daegu University" width="783px">
+            <img class="img_style_history_float" src="https://www.yeongnam.com/mnt/file/202411/2024110701000199900007841.jpg" alt="Daegu University" width="783px">
             <p class="p_under_comment">From left to right: Yeungnam University, Daegu University</p>
             </div>
         </article>
@@ -119,7 +134,12 @@
                     <th style="width:300px">Palgongsan Mountain - Gatbawi</th>
                     <th style="width:300px">Buddhist statue</th>
                     <th>Located near the peak of Palgongsan, Gatbawi is a famous stone Buddha statue known for its hat-like feature. it's a sacred spot where many people come to pray, believing that their wishes will be granted.</th>
-                    <th><img class="img_style_attraction" src="https://www.gbgs.go.kr/design/tour/img/sub03/storyTelling13_01.jpg" alt="Gatbawi" width="300px"></th>
+                    <!-- <th><img class="img_style_attraction" src="https://www.gbgs.go.kr/design/tour/img/sub03/storyTelling13_01.jpg" alt="Gatbawi" width="300px"></th> -->
+                    <th>
+                        <div id="Gatbawi_image"></div> 
+                        <button id="show_image_button_Gatbawi" onclick="showAttractionImage('Gatbawi')">image</button> <!-- innerHTML image update --> <!-- onclick trigger -->
+                    </th>
+                    
                     <th><a href="https://ko.wikipedia.org/wiki/%EA%B2%BD%EC%82%B0_%ED%8C%94%EA%B3%B5%EC%82%B0_%EA%B4%80%EB%B4%89_%EC%84%9D%EC%A1%B0%EC%97%AC%EB%9E%98%EC%A2%8C%EC%83%81">more</a></th>
                 </tr>
 
@@ -128,7 +148,11 @@
                     <th style="width:300px">Samseonghyeon Historical Park</th>
                     <th style="width:300px">Historical Park</th>
                     <th>Samseonghyeon Historical Park honors the Three Saints of Gyeongsan: Wonhyo, Seol Chong, and Iryeon. This park includes a memorial hall dedicated to these figures and various exhibits showcasing their lives and contributions. It’s an excellent place for learning about local history while enjoying a peaceful walk in nature.</th>
-                    <th><img class="img_style_attraction" src="https://gyeongsan.grandculture.net/Image?localName=gyeongsan&id=GC081P01319&t=middle" alt="Samseonghyeon Historical Park" width="300px"></th>
+                    <!-- <th><img class="img_style_attraction" src="https://gyeongsan.grandculture.net/Image?localName=gyeongsan&id=GC081P01319&t=middle" alt="Samseonghyeon Historical Park" width="300px"></th> -->
+                    <th>
+                        <div id="Park_image"></div> 
+                        <button id="show_image_button_Park" onclick="showAttractionImage('Park')">image</button> <!-- innerHTML image update --> <!-- onclick trigger -->
+                    </th>
                     <th><a href="https://samseonghyeon.gbgs.go.kr/samseonghyeon/?mid=300">more</a></th>
                 </tr>
 
@@ -137,7 +161,11 @@
                     <th style="width:300px">Bangok Reservoir</th>
                     <th style="width:300px">Reservoir</th>
                     <th>Bangokji is a beautiful reservoir located in Gyeongsan, known for its stunning scenery and tranquil atmosphere. Famous for its willow trees and cherry blossoms, it is a popular spot for photography, especially in spring when the cherry blossoms bloom.</th>
-                    <th><img class="img_style_attraction" src="http://www.kbsm.net/data/newsThumb/1682918196ADD_thumb780.jpg" alt="Bangok Reservoir" width="300px"></th>
+                    <!-- <th><img class="img_style_attraction" src="http://www.kbsm.net/data/newsThumb/1682918196ADD_thumb780.jpg" alt="Bangok Reservoir" width="300px"></th> -->
+                    <th>
+                        <div id="Reservoir_image"></div> 
+                        <button id="show_image_button_Reservoir" onclick="showAttractionImage('Reservoir')">image</button> <!-- innerHTML image update --> <!-- onclick trigger -->
+                    </th>
                     <th><a href="https://gyeongsan.grandculture.net/gyeongsan/toc/GC08100006">more</a></th>
                 </tr>
                 </tbody>
@@ -198,30 +226,30 @@
                 <!-- class to adjust width of column -->
                 <!-- type="text" -->
                 <th class="th_1">
-                    <form action="/action_page.php" method="post" autocomplete="on">
+                    <form id="nameForm" class="contact-form" action="javascript:void(0);" method="post" autocomplete="on">
                         <label for="name">1.name:</label>
                         <input type="text" id="name" name="name" size="9" placeholder="홍길동"> <br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_name">
                         <input type="reset" value="Reset">
                     </form>
                 </th>
                 <!-- class to adjust width of column -->
                 <!-- type="email" -->
                 <th class="th_2">
-                    <form action="/action_page.php" method="post" autocomplete="on">
+                    <form id="emailForm" action="javascript:void(0);" method="post" autocomplete="on">
                         <label for="email">2.email:</label>
                         <input type="email" id="email" name="email" size="20" placeholder="honggildong@naver.com"> <br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_email">
                         <input type="reset" value="Reset">
                     </form>
                 </th>
                 <!-- class to adjust width of column -->
                 <!-- type="tel" -->
                 <th class="th_3">
-                    <form action="/action_page.php" method="post" autocomplete="on">
+                    <form id="phoneForm" class="contact-form" action="javascript:void(0);" method="post" autocomplete="on">
                         <label for="phone">3.phone number:</label>
                         <input type="tel" id="phone" name="phone" placeholder="123-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" size="12"> <br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_phone">
                         <input type="reset" value="Reset">
                     </form>
                 </th>
@@ -230,14 +258,14 @@
                 <!-- class to adjust width of column -->
                  <!-- select -->
                 <th class="th_1">
-                    <form action="/action_page.php" method="get">
+                    <form id="inquiryForm" class="contact-form" action="javascript:void(0);" method="get">
                         <label for="inquiry">4.type of inquiry:</label>
                         <select id="inquiry" name="inquiry">
                         <option value="Website Error" selected>Website Error</option>
                         <option value="Content Correction">Content Correction</option>
                         <option value="Information Update">Information Update</option>
                         </select> <br>
-                        <input type="submit" value="submit">
+                        <input type="submit" value="submit" id="submit_inquiry">
                         <input type="reset" value="Reset">
                         
                     </form>
@@ -246,7 +274,7 @@
                  <!-- datalist -->
                 <th class="th_2">
                     <p>5. City</p>
-                    <form action="/action_page.php" method="post">
+                    <form id="cityForm" class="contact-form" action="javascript:void(0);" method="post">
                         <input list="city" name="city" >
                         <datalist id="city">
                         <option value="Gyeongsan">
@@ -255,7 +283,7 @@
                         <option value="Daegu">
                         <option value="Incheon">
                         </datalist> <br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_city">
                         <input type="reset" value="Reset">
                     </form>
                     <br>
@@ -263,10 +291,10 @@
                 <!-- class to adjust width of column -->
                 <!-- type=date -->
                 <th class="th_3">
-                    <form action="/action_page.php" method="post">
+                    <form id="birthdayForm" class="contact-form" action="javascript:void(0);" method="post">
                         <label for="birthday">6.Birthday:</label>
                         <input type="date" id="birthday" name="birthday"> <br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_birthday">
                         <input type="reset" value="Reset">
                     </form>
                 </th>
@@ -275,20 +303,20 @@
                 <!-- class to adjust width of column -->
                 <!-- type=time -->
                 <th class="th_1">
-                    <form action="/action_page.php" method="get">
+                    <form id="timeForm" class="contact-form" action="javascript:void(0);" method="get">
                         <label for="time">7.time:</label>
                         <input type="time" id="time" name="time"> <br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_time">
                         <input type="reset" value="Reset">
                     </form>
                 </th>
                 <!-- class to adjust width of column -->
                 <!-- textarea -->
                 <th class="th_2">
-                    <form action="/action_page.php" method="get">
+                    <form id="messageForm" class="contact-form" action="javascript:void(0);" method="get">
                         <label for="message">Your Comment or Message:</label><br>
                         <textarea id="message" name="message" rows="5" cols="40" placeholder="text..."></textarea><br><br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit_message">
                         <input type="reset" value="Reset"> <br><br>
                     </form>
                 </th>
@@ -313,9 +341,12 @@
  <section id="Footer">
     <footer> 
         <!-- copyright Entitie -->
-        <p>	&#169; 2024. Bae JinGyu all rights reserved.</p>
+        <script>
+            copyright_Write()
+        </script>
+        <br>
         <!-- link to Menu section on top -->
-        <a href="#Menu">Return to Menu</a>
+        <a href="#Menu" onclick="returnToTop()">Return to Top</a> <!-- onclick trigger -->
     </footer>
 </section> 
 </body>
