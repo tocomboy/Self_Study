@@ -55,5 +55,37 @@
   "C_Cpp_Runner.useLeakSanitizer": false,
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
-  "C_Cpp_Runner.msvcSecureNoWarnings": false
+"C_Cpp_Runner.msvcSecureNoWarnings": false,
+"sqltools.connections": [
+    {
+        "mysqlOptions": {
+            "authProtocol": "xprotocol",
+            "enableSsl": "Disabled"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 33060,
+        "driver": "MySQL",
+        "name": "MySQL Local",
+        "database": "sakila",
+        "username": "root",
+        "connectionTimeout": 30,
+        "password": "xhzha1313@"
+    },
+    {
+        "mysqlOptions": {
+            "authProtocol": "xprotocol",
+            "enableSsl": "Disabled"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 33060,
+        "driver": "MySQL",
+        "name": "MySQL Local_2",
+        "database": "northwind",
+        "username": "root",
+        "password": "xhzha1313@",
+        "connectionTimeout": 30
+    }
+]
 }

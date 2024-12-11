@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <!-- <h1>JavaScript Sets</h1>
+        <p>Create a set from an array:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a Set
+            const letters = new Set(["a","b","c"]);
+        // Display set.size
+            document.getElementById("demo").innerHTML="The set has " + letters.size + " values.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>The add() method adds values to a set:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a Set
+        const letters = new Set();
+        // const letters = new Set({fname:"John", lname:"Doe", age:25}); // 동작 안함
+        // Add Values to the Set
+        letters.add("a");
+        letters.add("b");
+        letters.add("c");
+        // Display the Size
+        document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>The add() method adds values to a Set:</p>
+        <p id="demo"></p>
+        <script>
+            // Create a new Set
+            const letters = new Set(["a","b","c"]);
+            // Add a new Element
+            letters.add("d");
+            letters.add("e");
+            // Display set.size
+            document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>Add 100 new values to a Set of 5 elements:</p>
+        <p id="demo"></p>
+        <script>
+            // Create a new Set
+            const letters = new Set(["a","b","c"]);
+            // Add a new Element
+            letters.add("d");
+            letters.add("e");
+            for (let i = 0; i< 100; i++){
+            letters.add(i);q
+            }
+            document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>Add 100 new values to a Set of 5 elements:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a new Set
+        const letters = new Set(["a","b","c"]);
+        // Add a new Element
+        letters.add("d");
+        letters.add("e");
+        const person = {fname:"John", lname:"Doe", age:25};
+        for(let x in person){ // x = key
+            letters.add(person[x]); // person[x] = value
+        }
+
+         // Display set.size
+        document.getElementById("demo").innerHTML = "The set has " + letters.size + " values.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>Add new values of an Array to a Set of 5 elements:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a new Set
+        const letters = new Set(["a","b","c"]);
+        // Add a new Element
+        letters.add("d");
+        letters.add("e");
+        // Add Array to Set Elements
+        const cars = ["BMW", "Volvo", "Kia", "Toyota", "Hyundai"];
+        for(let car in cars){
+            letters.add(car);
+        }
+        // Display set.size
+        document.getElementById("demo").innerHTML= "The set has " + letters.size+ " values.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        Example 7: Display [a,b,c,d,e] and x numbers ( x = 100)
+        <p>Add 100 new values to a Set of 5 elements:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a new Set
+        const letters = new Set(["a","b","c"]);
+        // Add a new Element
+        letters.add("d");
+        letters.add("e");
+        // Add 100 numbers to Set Elements
+        for (let i = 0; i< 100; i++){
+        letters.add(i);
+        }
+        // Display all 105 Elements 
+        let text = "";
+        for (let x of letters){
+            text += x + "<br>";    
+        }
+        document.getElementById("demo").innerHTML = "The set has " + letters.size + " values. " + "The set elements are: " + text;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>Add new values of an object to a Set of 5 elements:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a new Set
+        const letters = new Set(["a","b","c"]);
+        // Add a new Element
+        letters.add("d");
+        letters.add("e");
+        const person = {fname:"John", lname:"Doe", age:25}; 
+        // Add all object’s Elements
+        for (let x in person) {
+        letters.add(person[x]);
+        }
+        // Display all the 8 Elements
+        text = "";
+        for(let x of letters){
+            text += x + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML= "The set has " + letters.size + " values. " + "The set elements are: " + 
+        "<br>" + text;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Sets</h1>
+        <h2>The add() Method</h2>
+        <p>Add new values of an array to a Set of 5 elements:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a new Set
+        const letters = new Set(["a","b","c"]);
+        // Add a new Element
+        letters.add("d");
+        letters.add("e");
+        // Add Array to Set Elements
+        const cars = ["BMW", "Volvo", "Kia", "Toyota", "Hyundai"];
+        for (let x of cars) {
+        letters.add(x);
+        }
+        // Display all the 10 Element
+        text = "";
+        for(let x of letters){
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML= "The set has " + letters.size + " values. " + "The set elements are: " + 
+        "<br>" + text;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <P id="temp"></P>
+        <script>
+        const numbers = new Set();
+        for(let i=0; i<100; i++){
+            let ran = Math.floor(Math.random() * 10);
+            numbers.add(ran);
+        }
+        function getRandomNumber(max, min){
+
+        }
+        let text = "";
+        for(const x of numbers){
+            text += x + "<br>";
+        }
+        document.getElementById("temp").innerHTML= "size of JS set : " + numbers.size  + " and values : " + text;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Maps</h1>
+        <h2>The new Map Method()</h2>
+        <p>Creating a map from an array:</p>
+        <p id="demo"></p>
+        <script>
+        // Create a Map
+        const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200]
+        ]);
+        // In this example, the key should be a string
+        // try call fruits.get(apples); - ERROR 
+        let numb = fruits.get("apples"); 
+        document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Maps</h1>
+        <h2>The set() Method</h2>
+        <p id="demo"></p>
+        <script>
+        // Create a Map
+        const fruits = new Map();
+        // Set Map Values
+        fruits.set("apples", 500);
+        fruits.set("bananas", 300);
+        fruits.set("oranges", 200);
+        let numb = fruits.get("apples");
+        document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+        // In this example, the key should be a string
+        // → try call fruits.get(apples); 
+       </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Maps</h1>
+        <h2>The forEach() Method</h2>
+        <p id="demo"></p>
+        <script>
+        // Create a Map
+        const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 3200]
+        ]);
+        let text = "";
+        fruits.forEach (function(value, key) { // key, value - ERROR
+        text += key + ' = ' + value + "<br>"
+        })
+        document.getElementById("demo").innerHTML = text;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Maps</h1>
+        <h2>The values() Method</h2>
+        <p id="demo"></p>
+        <script>
+        // Create a Map
+        //const fruits = new Map([
+        //["apples", 500],
+        //["bananas", 300],
+        //["oranges", 200]
+        //]);
+        const fruits = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+        ["oranges", 100],
+        ["oranges", 400],
+        ["oranges", 300] // 중복되는 key가 있으면 마지막 값이 반영됨.
+        ]);
+        let total = 0;
+        // let total = " ";
+        for (const x of fruits.values()) {
+        total += x
+        // total += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = "Total sum of values = " + total;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <p id="temp"></p>
+        <script>
+            let car = new Map([
+            ["BMW", 2500],
+            ["Volvo", 5000],
+            ["Kia", 1500],
+            ["Toyota", 3000],
+            ["Hyundai", 2000]
+            ]);
+            let text = ""
+            text += "Car size before delete =" + car.size + "<br>";
+            const before_size = car.size;
+            sum = 0;
+            car.forEach(function(value, key){
+                if(value <= 2000){
+                    car.delete(key);
+                } else {
+                    sum += value;
+                    text += key + " = " + value + "<br>";
+                }
+            })
+            text += "Car size after delete =" + car.size + "<br>";
+            text += "Number of delete car =" + (before_size - car.size) + "<br>";
+
+            document.getElementById("temp").innerHTML = text;
+
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h2>JavaScript Error Handling</h2>
+        <p>How to use <b>try-catch</b> to display an error.</p>
+        <p id="demo"></p>
+        <script>
+        try {
+        adlert("Welcome guest!"); // typo error (adlert)
+        }
+        catch(err) {
+        alert(err.message);
+        }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h2>JavaScript try catch</h2>
+        <p>Please input a number between 5 and 10:</p>
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction()" >Test Input</button>
+        <p id="p1"></p>
+        <script>
+        function myFunction() {
+        const message = document.getElementById("p1");
+        message.innerHTML= ""; // At beginning it is empty message 
+       let x = document.getElementById("demo").value; // Take input from a user
+        try { 
+       if(x.trim() == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5) throw "too low";
+        if(x > 10) throw "too high";
+        }
+        catch(err) {
+        message.innerHTML= "Input is " + err; // At the end it is error message 
+       }
+       finally{
+        document.getElementById("demo").value = "";
+       }
+        }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Errors</h1>
+        <h2>The RangeError</h2>
+        <p>You cannot set the number of significant digits too high:</p>
+        <p id="demo">
+        <script>
+        let num = 5;
+        try {
+        let x = num.toPrecision(500); // 500 is to high
+        document.getElementById("demo").innerHTML = x;
+        }
+        catch(err) {
+        document.getElementById("demo").innerHTML = "Error messgage =  " + err.name;
+        }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Errors</h1>
+        <h2>The ReferenceError</h2>
+        <p>You cannot use the value of a non-existing variable:</p>
+        <p id="demo"></p>
+        <script>
+        let x = 5;
+        try {
+        x = y + 1; // y has not been declared!
+        }
+        catch(err) {
+        document.getElementById("demo").innerHTML = "Error messgage = " + err.name;
+        }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Errors</h1>
+        <h2>The SyntaxError</h2>
+        <p>You cannot evaluate code that contains a syntax error: </p>
+        <p id="demo"></p>
+        <script>
+        try {
+        eval("alert('Hello)"); // Missing ' will produce an error
+        }
+        catch(err) {
+        document.getElementById("demo").innerHTML = "Error messgage = " + err.name;
+        }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Errors</h1>
+        <h2>The TypeError</h2>
+        <p> You cannot convert a number to upper case </p>
+        <p id="demo"></p>
+        <script>
+        let num = 1;
+        try {
+        num.toUpperCase(); //toUpperCase function is expected to convert a string not number
+        }
+        catch(err) {
+        document.getElementById("demo").innerHTML = "Error messgage = " + err.name;
+        }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+
+        <!-- ---------------------------------------------------------------------------- -->
+
+    </body>
+</html>

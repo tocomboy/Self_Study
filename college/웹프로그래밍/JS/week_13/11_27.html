@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <!-- <h1>JavaScript Functions</h1>
+        <p>with the use of arrow function syntax.</p>
+        <p id="demo"></p>
+        <script>
+        hello = () => "Hello World!";
+        document.getElementById("demo").innerHTML = hello();
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Functions</h1>
+        <p><b> With </b> the use of arrow function syntax.</p>
+        <p id="demo"></p>
+        <script>
+        hello = (val) => "Hello" + val;
+        document.getElementById("demo").innerHTML= hello(" John!");
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Functions</h1>
+        <p>with the use of arrow function syntax.</p>
+        <p id="demo"></p>
+        <script>
+        let myFunction= (a, b) => a * b;
+        document.getElementById("demo").innerHTML = "Fuctionoutput = " + myFunction(4, 5);
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Functions</h1>
+        <p><b>With</b> the use of arrow function syntax.</p>
+        <p id="demo"></p>
+        <script>
+        myFunction= (a, b) => { 
+            let mul= a * b;
+            let sum = 10 + mul;
+            let word;
+            if (sum <= 20){
+                word = "less than 20";
+            }else{
+                word = "more than 20";
+            }
+            return word;
+        };
+        document.getElementById("demo").innerHTML = "Fuctionoutput = " + myFunction(4,5);
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Classes</h1>
+        <p>Creating two car objects from a car class:</p>
+        <p id="demo"></p>
+        <script>
+        //Create a car class
+        class Car {
+            constructor(name, year) {
+            this.name = name; //Initialize name property
+            this.year = year; //Initialize year property
+            }
+        }
+        const myCar1 = new Car("Ford", 2020); // create first object from car class
+        const myCar2 = new Car("Jeep", 2022); // create second object from car class
+        document.getElementById("demo").innerHTML ="The name of first car object is: " + myCar1.name + "<br> " +
+        "The name of second car object is: " + myCar2.name;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Class Methods</h1>
+        <p>How to define and use a Class method.</p>
+        <p id="demo"></p>
+        <script>
+        class Car {
+            constructor(name, year) { // create constructor method of object¡¯s properties (one time)
+                this.name = name;
+                this.year = year;
+            }
+            age() {    
+                // Any other class method
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+        const myCar1 = new Car("Ford", 2020);
+        const myCar2 = new Car("Jeep", 2022);
+        document.getElementById("demo").innerHTML = "My "+ myCar1.name + " car" + " is " + myCar1.age() + " years old." + "<br>"+
+        "My "+ myCar2.name + " car" + " is " + myCar2.age() + " years old.";
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Class Methods</h1>
+        <p>How to define and use a Class method.</p>
+        <p id="demo"></p>
+        <script>
+        class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(x) {     
+            // pass parameter to a class method
+                return x - this.year;
+            }
+        }
+        const myCar1 = new Car("Ford", 2020);
+        const myCar2 = new Car("Jeep", 2022);
+        const date = new Date();
+        let x = date.getFullYear();
+        document.getElementById("demo").innerHTML =
+        "My "+ myCar1.name + " car" + " is " + myCar1.age(x) + " years old." + "<br>"+
+        "My "+ myCar2.name + " car" + " is " + myCar2.age(x) + " years old.";
+        </script> -->
+        <!-- ----------------------------------------------------------------------------
+        <h1>JavaScript Modules</h1>
+        <p id="demo"></p>
+        <script type="module">
+        import { name, age } from "./person.js"; // import form person.js
+        let text = "My name is " + name + ", I am " + age + ".";
+        document.getElementById("demo").innerHTML= text;
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h1>JavaScript Modules</h1>
+        <p id="demo"></p>
+        <script type="module">
+        import message from "./message.js";
+        document.getElementById("demo").innerHTML= message();
+        </script> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- <h2>Create Object from JSON String <br>
+        <h2>(Read JS objects from JSON)</h2>
+        <p id="demo"></p>
+        <script>
+            // convert JSON to string
+            let text = '{"employees":[' +
+            '{"firstName":"John","lastName":"Doe" },' +
+            '{"firstName":"Anna","lastName":"Smith" },' +
+            '{"firstName":"Peter","lastName":"Jones" }]}'; 
+            // create JS objects from string
+            const JS_obj = JSON.parse(text);
+            // call JS objects and display on your webpage
+            document.getElementById("demo").innerHTML =
+            JS_obj.employees[0].firstName + " " + JS_obj.employees[0].lastName + "<br>"+
+            JS_obj.employees[1].firstName + " " + JS_obj.employees[1].lastName + "<br>"+
+            JS_obj.employees[2].firstName + " " + JS_obj.employees[2].lastName + "<br>";
+        </script> -->
+    </body>
+</html>

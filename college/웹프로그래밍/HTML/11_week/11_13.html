@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <!-- <h1>JavaScript HTML Events</h1>
+    <h2>The onclick Attribute</h2>
+    <p> Show time on a paragraph</p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo" ></p>
+    <p> Show time on the button itself </p>
+    <button onclick="this.innerHTML=Date()">The time is?</button> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>Never Create Strings as Objects</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+    <p id="demo"></p>
+    <script>
+    // let x = "John"; // x is a string
+    let x = new String("John");  // x is an object
+    let y = new String("John"); // y is an object
+    document.getElementById("demo").innerHTML= "x == y? " + (x==y) + ", x === y ? " + (x===y);
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h1>JavaScript Strings</h1>
+    <h2>Common JS string methods.</h2>
+    <p id="demo"></p>
+    <script>
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("demo").innerHTML = 
+    "The length of the string is: " + text.length + "<br>" + 
+    "The char at index 0 is: " + text.charAt(0) + "<br>" + 
+    "The code of char at index 0 is: " + text.charCodeAt(0) + "<br>" +
+    "The char at [0] is: " + text.at(0) + "<br>" + 
+    "The char of string [0] is: " + text[0] + "<br>" +
+    "The slice from 7 to 15 is: " + text.slice(7,15) + "<br>" +
+    "The slice from 7 to end is: " + text.slice(7) + "<br>" +
+    "The slice from 7 to 15 in backword is: " + text.slice(-15,-7) + "<br>";
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h1>JavaScript Strings</h1>
+    <h2>Common JS string methods.</h2>
+    <p id="demo"></p>
+    <script>
+    let text1 = "Hello World!";
+    let text2 = " Welcome to WP Class! ";
+    let text3 = "I love cats, cats are very easy to love, and cats are very popular."
+    document.getElementById("demo").innerHTML = 
+    "The uppercase of the string is: " + text1.toUpperCase() + "<br>" +
+    "The lowercase of the string is: " + text1.toLowerCase() + "<br>" + 
+    "The concat of the string is: " + text1.concat(" ", " This is WP Class!") + "<br>" +
+    "The trim of the string is: " + text2.trim() + "<br>"+ 
+    "The trimStart of the string is: " + text2.trimStart() + "<br>"+ 
+    "The trimEnd of the string is: " + text2.trimEnd() + "<br>" + 
+    "The padStart of the string is: " + text1.padStart(30, "0") + "<br>" + // pad는 전체 문장 길이.
+    "The padStart of the string is: " + text1.padStart(8, "0") + "<br>" + // text1이 8보다 크기 때문에 작동 X
+    "The padEnd of the string is: " + text1.padEnd(30, "x") + "<br>" +
+    "The repeat of the string is: " + text1.repeat(3) + "<br>" +
+    "The replace (case sensitive) of the string is: " + text1.replace("Hello World!", "Hi Students!") + "<br>" +
+    "The replace (case insensitive) of the string is: " + text1.replace(/HELLO WORLD!/i, "Hi Students!") + "<br>" +
+    "The replace (match globally) of the string is: " + text3.replace(/cats/g, "dogs");
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h1>JavaScript Arrays</h1>
+    <h2>JS Array Common Methods (Part 1)</h2>
+    <p>Array is: fruits = ["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="demo"></p>
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = 
+    "1) Length of fruits array = " + fruits.length + "<br>" + 
+    "2) The array's element at index 2 is: " + fruits.at(2) + "<br>" +
+    "3) Join all array's elements: " + fruits.join(" * ") + "<br>" +
+    "4) Push a new element to an array (at the end) with array length = " + fruits.push("Kiwi") + " ; fruits = [ " + fruits+ " ] <br>"+
+    "5) Pop out the last element from an array: " + fruits.pop() + "<br>" + 
+    "6) Remove the first array element and 'shift' all other elements to a lower index: " + fruits.shift() + " ; fruits = [ " + fruits+ " ] <br>" + 
+    "7) Add a new element to an array (at the beginning) and 'unshift' older elements: " + fruits.unshift("ppppppp") + " ; fruits = [ " + fruits+ " ] <br>" ; 
+</script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h1>JavaScript Arrays</h1>
+    <h2>JS Array Common Methods (Part 2)</h2>
+    <p>fruits = ["Banana", "Orange", "Apple", "Mango"]</p>
+    <p>names = ["John", "Kim", "Lee", "Park"]</p>
+    <p>cars = ["BMW", "KIA", "TOYOTA", "HYUNDAI"]</p>
+    <p>animals = ["Cat", "Dog", "Elephant", "Tiger"]</p>
+    <p>myArr1 = [[1,2,3],[4,5,6],[7,8,9]]</p>
+    <p>myArr2 = [1, 2, 3, 4, 5,6]</p>
+    <p id="demo"></p>
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    const names = ["John", "Kim", "Lee", "Park"];
+    const cars = ["BMW", "KIA", "TOYOTA", "HYUNDAI"];
+    const animals = ["Cat", "Dog", "Elephant", "Tiger"];
+    const myArr1 = [[1,2,3],[4,5,6],[7,8,9]];
+    const myArr2 = [1, 2, 3, 4, 5, 6];
+    document.getElementById("demo").innerHTML = 
+    "1) Delete the 2nd element in the array fruits= " + delete fruits[1] + "; Show fruits after deletion is: [" + fruits + "] <br>" +
+    "2) Concat the final list of names, cars, and animals arrays: " + names.concat(cars, animals) + "<br>" +
+    "3) The new flat of myArr1 is: " + myArr1.flat() + "<br>" +
+    "4) The new flatMap of myArr2 is: " + myArr2.flatMap(x => [x, x * 10]) + "<br>" ;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript Math Functions</h2>
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = 
+    "Math.round(x): returns nearest integer of x: " + Math.round(4.6) + "; " + Math.round(4.5) + "; " + Math.round(4.4) + "<br>"+ "<hr>"+
+    "Math.ceil(x): returns the value of x rounded up to its nearest integer: " + Math.ceil(4.7) + "; " + Math.ceil(4.2) + "; " + Math.ceil(-4.4)+ "<br>"+ "<hr>"+
+    "Math.floor(x): returns the value of x rounded down to its nearest integer: " + Math.floor(4.7) + "; " + Math.floor(4.2) + "; " + Math.floor(-4.4)+ "<br>"+ "<hr>"+
+    "Math.trunc(x): returns the integer part of x: " + Math.trunc(4.7) + "; " + Math.trunc(4.2) + "; " + Math.trunc(-4.4)+ "<br>"+ "<hr>"+
+    "Math.pow(x, y): returns the value of x to the power of y: " + Math.pow(4, 2) + "; " + Math.pow(-2, 3) + "; " + Math.pow(0.5, 3)+ "<br>"+ "<hr>"+
+    "Math.sqrt(x): returns the square root of x: " + Math.sqrt(16) + "; " + Math.sqrt(-16) + "; " +  Math.sqrt(0.25)+ "<br>"+ "<hr>"+
+    "Math.abs(x): returns the absolute (positive) value of x: " + Math.abs(5.5) + "; " + Math.abs(-5.5) + "; " + Math.abs(0)+ "<br>" + "<hr>"+
+    "Math.max(): can be used to find the highest value in a list of arguments: " + Math.max(0, 150, 30, 20, -8, -200) + "<br>"+ "<hr>"+
+    "Math.min(): can be used to find the lowest value in a list of arguments: " + Math.min(0, 150, 30, 20, -8, -200) + "<br>"+ "<hr>"+
+    "Math.random(): returns a random number between 0 (inclusive), and 1 (exclusive): " + Math.random() + "<br>"+ "<hr>"+
+    "Math.log(): returns the natural logarithm of x: " + Math.log(0) + "; " + Math.log(1) + "; " + Math.log(2.7183) + "; " + Math.log(5) + "<br>"+ "<hr>"+
+    "Math.log2(): returns the base 2 logarithm of x. " + Math.log2(2) + "; " + Math.log2(4) + "; " + Math.log2(8) + "<br>"+ "<hr>"+
+    "Math.log10(): returns the base 10 logarithm of x. " + Math.log10(10) + "; " + Math.log10(100) + "; " + Math.log10(10000) + "<br>"+ "<hr>"+
+    "Math.exp(): returns the value of Ex, where E is Euler's number: " + Math.exp(1) + "; " + Math.exp(-1) + "; " + Math.exp(2) + "<br>";
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript Math Random Integers Generator</h2>
+    <p id="demo"></p>
+    <script>
+    document.getElementById("demo").innerHTML = 
+    "Returns a random integer from 0 to 9 (both included): " + Math.floor(Math.random() * 10) + "<br>"+
+    "<hr>"+
+    "Returns a random integer from 0 to 10 (both included): " + Math.floor(Math.random() * 11) + "<br>"+
+    "<hr>"+
+    "Returns a random integer from 0 to 99 (both included): " + Math.floor(Math.random() * 100) + "<br>"+
+    "<hr>"+
+    "Returns a random integer from 0 to 100 (both included): " + Math.floor(Math.random() * 101) + "<br>"+
+    "<hr>"+
+    "Returns a random integer from 1 to 10 (both included): " + (Math.floor(Math.random() * 10) + 1) + "<br>"+
+    "<hr>"+
+    "Returns a random integer from 1 to 100 (both included):" + (Math.floor(Math.random() * 100) + 1) + "<br>";
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript Math (A Proper Random Function)</h2>
+    <p>Every time you click the button, getRndInteger(min, max) returns a random number between min (included) and max (excluded) :</p>
+    <button onclick="document.getElementById('demo1').innerHTML = getRndInteger_excluded(0,10) ">Click Me</button>
+    <p id="demo1"></p>
+    <script>
+    function getRndInteger_excluded(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    </script>
+
+    <h2>JavaScript Math (A Proper Random Function)</h2>
+    <p>Every time you click the button, getRndInteger(min, max) returns a random number between min and max (bot included) :</p>
+    <button onclick="document.getElementById('demo2').innerHTML = getRndInteger_included(0,10) ">Click Me </button>
+    <p id="demo2"></p>
+    <script>
+    function getRndInteger_included(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript if .. else</h2>
+    <p>A time-based greeting:</p>
+    <p id="demo"></p>
+    <script>
+    const hour = new Date().getHours(); 
+    let greeting;
+    if (hour < 18) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML= greeting;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript if .. else</h2>
+    <p>A time-based greeting:</p>
+    <p id="demo"></p>
+    <script>
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+        greeting = "Good morning";
+    } else if (time < 20) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML= greeting;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript Switch Statement</h2>
+    <p> Choose The DAY:</p>
+    <p id="demo"></p>
+    <script>
+    let day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday"; }
+    document.getElementById("demo").innerHTML = day;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript Switch Statement</h2>
+    <p> Choose Weekend/Weekday:</p>
+    <p id="demo"></p>
+    <script>
+    let day;
+    switch (new Date().getDay()) {
+        case 6:
+            day = "Today is Saturday";
+            break;
+        case 0:
+            day = "Today is Sunday";
+            break;
+        default:
+            day = "Today is a Weekday!";
+    }
+    document.getElementById("demo").innerHTML= day;
+    </script> -->
+
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript switch</h2>
+    <p> Choose Weekend/Weekday:</p>
+    <p id="demo"></p>
+    <script>
+    let day;
+    switch (new Date().getDay()) {
+        default:
+            day = "Today is a Weekday!";
+            break;
+        case 6:
+            day = "Today is Saturday";
+            break;
+        case 0:
+            day = "Today is Sunday";
+        }
+document.getElementById("demo").innerHTML= day;
+</script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript switch</h2>
+    <p> Choose Weekend/Weekday:</p>
+    <p id="demo"></p>
+    <script>
+    let day;
+    switch (new Date().getDay()) {
+        case 4: // Thursday
+        case 5:// Friday
+            day = "Soon it is Weekend";
+            break;
+        case 0:
+        case 6:
+            day = "It is Weekend";
+            break;
+        default: // Monday, Tuesday, or Wednesday
+            day = "It's the beginning of the week!";
+    }
+    document.getElementById("demo").innerHTML= day;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript For Loop</h2>
+    <h3> JS Changes on Expression 1</h3>
+    <p id="demo"></p>
+    <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        let i, len, text;
+        for (i= 0, len= cars.length, text = ""; i< len; i++) {
+            text += cars[i] + "<br>";
+        }
+    document.getElementById("demo").innerHTML = text;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+    <!-- <h2>JavaScript For Of Loop</h2>
+    <p id="demo"></p>
+    <script>
+        const cars = ["BMW", "Volvo", "Mini"];
+        let text = "";
+        for (let x of cars) {
+            text += x + "<br>";
+        }
+    document.getElementById("demo").innerHTML = 
+    text;
+    </script> -->
+<!-- ---------------------------------------------------------------------------- -->
+
+<!-- ---------------------------------------------------------------------------- -->
+
+</body>
+</html>
